@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: poppins, sans-serif;
+    font-size: 0.88rem;
+    background-color: #202547;
+    user-select: none; /* pesquise sobre */
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    height: 45vh;   
+}
+
+header div {
+    margin-top: 2vh;
+    margin: auto;
+}
+
+.cruz {
+    margin: auto;
+}
+
+header h3 {
+    margin-top: .5rem;
+    color: #ff842c; 
+}
+
+header div .tematica {
+    margin-top: .5rem;
+    align-items: auto;
+    text-align: center;
+    color: #ff842c;
+}
+
+header div .tematica h2 {
+    font-weight: normal;
+    font-family: 'Monoton';
+}
+
+header div .tematica small {
+    position: relative;
+    right: -35vw;
+}
+
+main{
+    align-items: center;
+    display: flex;
+    position: relative;
+    height: 35vh;
+}
+
+nav{
+    width: 75vw;
+    margin: auto;
+    display: grid;
+    gap: .5rem;
+}
+
+nav a {
+    text-align: center;
+    border: 2px solid #ff842c;
+    padding: 5px;
+    border-radius: 10px;
+    color: #ff842c;
+    background-color: #191e3a;
+}
+
+nav a:hover{
+    border: 2px solid #191e3a;
+    color: #191e3a;
+    background-color: #ff842c;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    border-top: 2px solid #ff842c;
+    background-color: #191e3a;
+    position: relative;
+    height: 19vh;
+    margin-top: 1vh;
+    bottom: 0; 
+}
+
+footer img {
+    margin-left: 1rem;
+    height: 80%;
+}
+
+footer div {
+    padding: 10px;
+    width: 50%;
+    margin-left: .5rem;
+    color: #ff842c;
+    border: 2px solid #ff842c;
+    border-radius: 10px;
+}

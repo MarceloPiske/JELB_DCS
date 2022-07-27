@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: poppins, sans-serif;
+    font-size: 0.88rem;
+    background-color: #202547;
+    user-select: none; /* pesquise sobre */
+    overflow-x: hidden;
+}
+header{
+    width: 100vw;
+    position: fixed;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    color: #ff842c;
+    background-color: #191e3a;
+    z-index: 1;
+}
+header a {
+    left: 1rem;
+    color: #ff842c;
+    position: absolute;
+}
+header h2 {
+    margin: auto;
+}
+
+main {
+    top: 10vh;
+    position: relative;
+    overflow-y: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.image {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    grid-area: image;
+}
+.image img {
+    border-radius: 10px;
+    width: 4rem;
+    height: 4rem;
+    margin-left: .5rem;
+}
+.function {
+    grid-area: function;
+}
+.contact {
+    grid-area: contact;
+}
+.card {
+    grid-template-columns: 5.5rem auto;
+    height: 10vh;
+    margin-bottom: .5rem;
+    display: grid;
+    grid-template-areas: 
+    "image name" 
+    "image function" 
+    "image contact";
+    border: 2px solid #ff842c;
+    padding: 5px;
+    border-radius: 10px;
+    color: #ff842c;
+    background-color: #191e3a;
+}
+
+
+nav a {
+    text-align: center;
+    border: 2px solid #ff842c;
+    padding: 5px;
+    border-radius: 10px;
+    color: #ff842c;
+    background-color: #191e3a;
+}
+
+nav a:hover{
+    border: 2px solid #191e3a;
+    color: #191e3a;
+    background-color: #ff842c;
+}
