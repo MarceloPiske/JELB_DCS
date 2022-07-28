@@ -67,6 +67,13 @@ main{
     position: relative;
     height: 35vh;
 }
+main div {
+    display: none;
+}
+
+.tematica {
+    display: none;
+}
 
 .nav-mobile{
     width: 75vw;
@@ -167,10 +174,12 @@ footer div a {
     }
 
     main  .tematica {
+        display: block;
         margin-right: auto;
         color: #ff842c;
     }
     main div {
+        display: block;
         margin-left: auto;
         text-align: center;
     }
