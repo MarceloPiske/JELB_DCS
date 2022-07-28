@@ -34,7 +34,8 @@ header div {
     margin: auto;
 }
 
-.cruz {
+.cruz-mobile {
+    width: 100px;
     margin: auto;
 }
 
@@ -43,19 +44,19 @@ header h3 {
     color: #ff842c; 
 }
 
-header div .tematica {
+header div .tematica-mobile {
     margin-top: .5rem;
     align-items: auto;
     text-align: center;
     color: #ff842c;
 }
 
-header div .tematica h2 {
+header div .tematica-mobile h2 {
     font-weight: normal;
     font-family: 'Monoton';
 }
 
-header div .tematica small {
+header div .tematica-mobile small {
     position: relative;
     right: -35vw;
 }
@@ -67,23 +68,24 @@ main{
     height: 35vh;
 }
 
-nav{
+.nav-mobile{
     width: 75vw;
     margin: auto;
     display: grid;
     gap: .5rem;
 }
 
-nav a {
+.nav-mobile a {
     text-align: center;
     border: 2px solid #ff842c;
     padding: 5px;
     border-radius: 10px;
     color: #ff842c;
     background-color: #191e3a;
+    cursor: pointer;
 }
 
-nav a:hover{
+.nav-mobile a:hover{
     border: 2px solid #191e3a;
     color: #191e3a;
     background-color: #ff842c;
@@ -118,11 +120,87 @@ footer div a {
     color: #ff842c;
 }
 
+.nav-descktop{
+    display: none;
+}
+.descktop-details{
+    display: none;
+}
 @media screen and (min-width: 1200px){
     .container{
-        margin: auto;
-        max-width: 70%;
+        /* margin: auto;
+        max-width: 70%; */
         background-color: #202547;
-        padding: 1rem;
+    }
+
+    header {
+        padding: 0;
+        width: 100vw;
+        background-color: #191e3a;
+        height: 10vh;
+        border-bottom: 2px solid #ff842c;
+    }
+    header .nav-descktop {
+        position: relative;
+        margin-left: auto;
+        margin-right: 2rem;
+    }
+
+    header .nav-descktop a {
+        padding: 15px;
+        border-radius: 10px;
+        color: #ff842c;
+        background-color: #191e3a;
+        cursor: pointer;
+    }
+    main {
+        padding: 0;
+        height: 75vh;
+    }
+    main .cruz {
+        width: 20rem;
+    }
+
+    main h1 {
+        margin-top: .5rem;
+        color: #ff842c;
+    }
+
+    main  .tematica {
+        margin-right: auto;
+        color: #ff842c;
+    }
+    main div {
+        margin-left: auto;
+        text-align: center;
+    }
+    main  .tematica h1 {
+        font-weight: normal;
+        font-family: 'Monoton';
+    }
+
+    main  .tematica small {
+        position: relative;
+    }
+    footer {
+        padding: 0;
+        bottom: 0;
+        height: 15vh;
+    }
+
+    .nav-descktop{
+        display: block;
+    }
+
+    .descktop-details{
+        display: block;
+    }
+
+    .nav-mobile {
+        display: none;
+    }
+
+    .mobile-details{
+        display: none;
     }
 }
